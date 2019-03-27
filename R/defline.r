@@ -1,5 +1,5 @@
 #' @include all-generics.r utils.r blast-utils.r class-utils.r
-#' @importFrom stringr str_split_fixed str_extract_all perl
+#' @importFrom stringr str_split_fixed str_extract_all regex
 NULL
 
 # Defline-class ----------------------------------------------------------
@@ -174,7 +174,7 @@ Deflines <- function(x) {
   # parse identifier patterns
   # first we extract the database tags which always are 2 or 3 lowercase
   # letters followed by a pipe.
-  db_pattern <- perl("([[:lower:]]{2,3})(?=\\|)")
+  db_pattern <- regex("([[:lower:]]{2,3})(?=\\|)")
   tags <- str_extract_all(ids, db_pattern) %|% NA_character_
   ids <- as.list(ids)
   .parseDeflines(tags, ids, descriptions, species)

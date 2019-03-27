@@ -308,7 +308,7 @@ setMethod('getHitFrame', 'Query', function(x, max = FALSE) {
 setMethod("getQueryRange", "Query", function(x, max = FALSE) {
   ans <- IRangesList( lapply(x@hits, getQueryRange, max = max) )
   if (max)
-    IRanges::unlist(ans)
+    unlist(ans)
   else ans
 })
 
@@ -316,7 +316,7 @@ setMethod("getQueryRange", "Query", function(x, max = FALSE) {
 setMethod("getHitRange", "Query", function(x, max = FALSE) {
   ans <- IRangesList( lapply(x@hits, getHitRange, max = max) )
   if (max)
-    IRanges::unlist(ans)
+    unlist(ans)
   else ans
 }) 
 

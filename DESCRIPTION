@@ -3,8 +3,8 @@ Version: 0.2.3.9000
 Date: 2014-07-31
 Type: Package
 Title: A wrapper for NCBI Blast
-Author: Gerhard Schöfl [aut, cre]
-Maintainer: Gerhard Schöfl <gerhard.schofl@gmail.com>
+Author: Gerhard Sch鏋歠l [aut, cre]
+Maintainer: Gerhard Sch鏋歠l <gerhard.schofl@gmail.com>
 Description: A set of classes and functions to manage
     NCBI Blast locally or via web service queries.
 License: MIT
@@ -43,3 +43,4 @@ Collate:
     'blastTable-class.r'
     'blastr-package.r'
     'zzz.r'
+RoxygenNote: 6.1.1

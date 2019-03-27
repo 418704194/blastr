@@ -1,5 +1,5 @@
 #' @include blastReport-class.r blast-parser-db.r sqlite-db.r
-#' @importFrom IRanges IRanges IRangesList reduce width unlist
+#' @importFrom IRanges IRanges IRangesList reduce width
 NULL
 
 

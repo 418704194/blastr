@@ -1,5 +1,5 @@
 #' @include all-generics.r defline.r
-#' @importFrom IRanges IRanges IRangesList reduce width unlist
+#' @importFrom IRanges IRanges IRangesList reduce width
 #' @importFrom Biostrings BStringSet
 NULL
 
